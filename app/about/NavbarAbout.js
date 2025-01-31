@@ -2,32 +2,32 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay";
+import MenuOverlay from "../components/MenuOverlay";
 import Image from 'next/image.js'
 
 const navLinks = [
   {
-    title: "About",
-    path: "/about", // Change from "#about" to "/about"
+    title: "Home",
+    path: "/",  // Navigates to app/page.js
   },
   {
     title: "Playlists",
-    path: "#playlists",
+    path: "/#playlists",  // Navigates within Home page
   },
   {
     title: "Contact",
-    path: "#contact",
-  },
+    path: "/#contact",  // Navigates within Home page
+  }
 ];
 
-const Navbar = () => {
+const NavbarAbout = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="container flex flex-wrap items-center justify-between px-4 py-2 mx-auto lg:py-4">
         <Link
-          href={"/"}
+          href={"/about"}
           className="text-2xl font-semibold text-white md:text-5xl"
         >
           <Image src="/images/LOGOnew.png" alt="Logo" className="object-cover rounded-full" width={50} height={50} />  
@@ -66,4 +66,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarAbout;

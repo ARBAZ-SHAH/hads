@@ -61,19 +61,19 @@ const initialVideosData = [
     id: 9,
     title: "Student Visa of Australia Part 1",
     videoUrl: "https://www.youtube.com/watch?v=EtwNri0YZqo&list=PLsVhKVSUyR8Nr82OtqbkMiYEEn_qt7qG8",
-    tag: ["Recent", "All"],
+    tag: ["Recent", "All", "Australia"],
   },
   {
     id: 10,
     title: "Student Visa of Australia Part 2",
     videoUrl: "https://www.youtube.com/watch?v=aC7vZ-_hy4I&list=PLsVhKVSUyR8Nr82OtqbkMiYEEn_qt7qG8&index=3",
-    tag: ["Recent", "All"],
+    tag: ["Recent", "All", "Australia"],
   },
   {
     id: 11,
     title: "Australian Immigration 2023",
     videoUrl: "https://www.youtube.com/watch?v=QcDoZ3FizXg&list=PLsVhKVSUyR8Nr82OtqbkMiYEEn_qt7qG8&index=4",
-    tag: ["Recent", "All"],
+    tag: ["Recent", "All", "Australia"],
   },
 ].map(video => ({
   ...video,

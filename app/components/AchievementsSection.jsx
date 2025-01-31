@@ -32,21 +32,21 @@ const achievementsList = [
 
 const AchievementsSection = () => {
   return (
-    <div className="px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+    <div className="text-black px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between text-black">
         {achievementsList.map((achievement, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
+              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0 text-black"
             >
-              <h2 className="flex flex-row text-4xl font-bold text-white">
+              <h2 className="flex flex-row text-4xl font-bold text-black">
                 {achievement.prefix}
                 <AnimatedNumbers
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
-                  className="text-4xl font-bold text-white"
+                  className="text-4xl font-bold text-black"
                   configs={(_, index) => {
                     return {
                       mass: 1,
@@ -57,7 +57,7 @@ const AchievementsSection = () => {
                 />
                 {achievement.postfix}
               </h2>
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="text-black text-base" >{achievement.metric}</p>
             </div>
           );
         })}

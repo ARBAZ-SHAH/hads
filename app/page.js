@@ -12,7 +12,7 @@ export default function Home() {
     <main
       className="flex min-h-screen flex-col relative"
       style={{
-        backgroundImage: "url('/images/daniel-olah-ZbEURDlbE6o-unsplash.jpg')",
+        backgroundImage: "url('/images/DALLE_x.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

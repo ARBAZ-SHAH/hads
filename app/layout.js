@@ -7,7 +7,7 @@ export const metadata = {
   title: "HSSD",
   description: "Haris Saeed",
   icons: {
-    icon: "/LOGOnew.ico", // Correct path for the favicon
+    icon: "/HSfavicon.ico", // Correct path for the favicon
   },
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         {/* Fallback in case metadata doesn't work */}
         <link
           rel="icon"
-          href="/LOGOnew.ico" // Correct favicon path
+          href="/HSfavicon.ico" // Correct favicon path
           type="image/icon"
         />
         <title>{metadata.title}</title>

@@ -98,13 +98,13 @@ const YouTubeVideoSection = () => {
   };
   return (
     <section id="playlists">
-      <h2 className="mb-8 mt-4 text-center text-4xl font-bold text-white md:mb-12">
+      <h2 className="mb-8 mt-4 text-center text-4xl font-bold text-black md:mb-12">
         My Videos
       </h2>
 
-      <div className="flex flex-row items-center justify-center gap-2 py-6 text-white">
+      <div className="flex flex-row items-center justify-center gap-2 py-6 text-black">
       <VideoTag
-          hover="bg-lime-400"
+          hover="bg-lime-400 "
           onClick={handleTagChange}
           name="Recent"
           isSelected={tag === "Recent"}

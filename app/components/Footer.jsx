@@ -3,12 +3,12 @@ import Image from 'next/image.js';
 
 const Footer = () => {
   return (
-    <footer className="footer z-9 rounded-xl border border-l-purple-500 border-r-transparent border-t-[#000000] bg-slate-800 from-emerald-800 to-transparent text-emerald-300">
+    <footer className="footer z-9 rounded-xl border border-l-black border-r-transparent border-t-[#000000]  bg-gradient-to-br from-black via-slate-800 to-zinc-50">
       <div className="container flex justify-between p-12">
         {/* Logo Section */}
         <span>
           <Image
-            src="/images/LOGO.png"
+            src="/images/HS.jpg"
             alt="Logo"
             className="rounded-full object-cover"
             width={200}

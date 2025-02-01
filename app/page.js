@@ -12,7 +12,7 @@ export default function Home() {
     <main
       className="flex min-h-screen flex-col relative"
       style={{
-        backgroundImage: "url('/images/DALLE_x.png')",
+        backgroundImage: "url('/images/ethereal_w.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -21,6 +21,7 @@ export default function Home() {
       <Navbar />
       <div className="container relative z-0 mx-auto mt-24 px-12 py-4">
         <HeroSection />
+        <br/><br/>
         <AchievementsSection />
         <YouTubeVideoSection />
         <Footer />

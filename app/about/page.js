@@ -37,7 +37,7 @@ export default function About() {
       reset() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 30 + 1;
+        this.size = Math.random() * 10 + 10;
         this.depth = Math.random();
         this.speed = (Math.random() * 1 + 0.9) * (1 - this.depth);
         this.rotation = Math.random() * 360;
@@ -129,7 +129,7 @@ export default function About() {
     <main
       className="flex min-h-screen flex-col relative"
       style={{
-        backgroundImage: "url('/images/northernmost_w.png')",
+        backgroundImage: "url('/images/cosmic_w.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

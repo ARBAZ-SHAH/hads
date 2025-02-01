@@ -28,7 +28,7 @@ const VideoCard = ({ videoId, title }) => {
   };
 
   return (
-    <div className="flex flex-col h-full bg-[#181818] rounded-lg overflow-hidden shadow-lg">
+    <div className="flex flex-col h-full bg-[#181818] rounded-3xl overflow-hidden shadow-lg">
       <div className="relative pb-[56.25%]"> {/* 16:9 Aspect Ratio */}
         <YouTube
           videoId={videoId}
@@ -41,10 +41,8 @@ const VideoCard = ({ videoId, title }) => {
         <h5 className="text-xl font-semibold">{title}</h5>
         <button 
           onClick={playVideo} 
-          className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
-        >
-          Play Video
-        </button>
+          className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-3xl hover:bg-blue-700"
+        >➤</button>
       </div>
     </div>
   );

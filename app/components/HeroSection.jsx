@@ -10,7 +10,7 @@ const HeroSection = () => {
           <Image src="/images/HS.jpg" alt="Logo" className="rounded-full object-cover" width={400} height={400} />
         </div>
         <h1 className="mb-4 text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl border-text">
-        <span className="bg-gradient-radial from-violet-500 via-black to-blue-600 bg-clip-text text-transparent shadow-black shadow-sm">
+        <span className="bg-gradient-radial from-violet-500 via-black to-blue-600 bg-clip-text text-transparent">
           Hey everyone! I am Haris Saeed
           </span>
 
@@ -43,16 +43,23 @@ const HeroSection = () => {
   <TypeAnimation sequence={['Advertising', 1000]} wrapper="span" speed={59} repeat={Infinity} />
 </div>
 
-  
-        <div>
-          <a href="#contact" className="mr-4 block w-full rounded-full bg-gradient-to-br from-violet-500 via-black to-blue-600 px-5 py-2 text-center text-white hover:bg-orange-600 sm:w-fit border-text">
-            Contact Me
-          </a>
-          <br/><br/>
-          <a href="https://www.youtube.com/@harissaid1983" className="mr-4 block w-full rounded-full bg-gradient-to-br from-violet-500 via-black to-blue-600 px-5 py-2 text-center text-white hover:bg-orange-600 sm:w-fit border-text">
-            My Channel
-          </a>
-        </div>
+<div className="flex flex-wrap justify-around gap-x-20 gap-y-10">
+  <a 
+    href="#contact" 
+    className="rounded-full bg-gradient-to-br from-violet-500 via-black to-blue-600 px-5 py-2 text-center text-white hover:bg-orange-600 sm:w-fit border-text"
+  >
+    Contact Me
+  </a>
+
+  <a 
+    href="https://www.youtube.com/@harissaid1983" 
+    className="rounded-full bg-gradient-to-br from-violet-500 via-black to-blue-600 px-5 py-2 text-center text-white hover:bg-orange-600 sm:w-fit border-text"
+  >
+    My Channel
+  </a>
+</div>
+
+
       </div>
 
       <div className="col-span-5 mt-4 place-self-center lg:mt-0">

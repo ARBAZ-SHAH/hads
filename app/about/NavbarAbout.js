@@ -13,10 +13,6 @@ const navLinks = [
   {
     title: "Playlists",
     path: "/#playlists",  // Navigates within Home page
-  },
-  {
-    title: "Contact",
-    path: "/#contact",  // Navigates within Home page
   }
 ];
 

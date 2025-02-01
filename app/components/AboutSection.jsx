@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-lg">
         <li>Brand management (39 endorsements)</li>
         <li>Creative Strategy (34 endorsements)</li>
         <li>Media planning (24 endorsements)</li>
@@ -45,15 +45,15 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-      <Image src="/images/UNSW.png" width={50} height={50} alt="New" />
-      <li><h1>University of New South Wales</h1><h2>Learn to Lead with UNSW 2022</h2></li>
-      <Image src="/images/UNSW.png" width={50} height={50} alt="New" />
-      <li><h1>University of New South Wales</h1><h2>Learn to Lead with UNSW 2021</h2></li>
-      <Image src="/images/World Education Services.png" width={50} height={50} alt="New" />
-      <li><h1>World Education Services</h1><h2>Verified International Academic Qualifications</h2></li>
-      <Image src="/images/harvard_business_school_logo.png" width={50} height={50} alt="New" />
-      <li><h1>Harvard Business School</h1><h2>Customer Focus</h2></li>
+      <ul className="list-disc pl-2 justify-center text-lg">
+      <Image src="/images/UNSW.png" width={70} height={70} alt="New" className="justify-center" />
+      <li className="text-lg"><h1>University of New South Wales</h1><h2>Learn to Lead with UNSW 2022</h2></li>
+      <Image src="/images/UNSW.png" width={70} height={70} alt="New" />
+      <li className="text-lg" ><h1>University of New South Wales</h1><h2>Learn to Lead with UNSW 2021</h2></li>
+      <Image src="/images/World Education Services.png" width={70} height={70} alt="New" />
+      <li className="text-lg"><h1>World Education Services</h1><h2>Verified International Academic Qualifications</h2></li>
+      <Image src="/images/harvard_business_school_logo.png" width={70} height={70} alt="New" />
+      <li className="text-lg"><h1>Harvard Business School</h1><h2>Customer Focus</h2></li>
     </ul>
     ),
   },
@@ -61,11 +61,11 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <Image src="/images/UNSW.png" width={50} height={50} alt="New" />
-        <li><h1>University of New South Wales</h1><h2>Masters, Marketing</h2><h3>2017-2018</h3></li>
-        <Image src="/images/Baharia.png" width={50} height={50} alt="New" />
-        <li><h1>Baharia University</h1><h2>MBA, Marketing</h2><h3>2006-2008</h3></li>
+      <ul className="list-disc pl-2 justify-center text-lg">
+        <Image src="/images/UNSW.png" width={70} height={70} alt="New" />
+        <li className="text-lg"><h1>University of New South Wales</h1><h2>Masters, Marketing</h2><h3>2017-2018</h3></li>
+        <Image src="/images/Baharia.png" width={70} height={70} alt="New" />
+        <li className="text-lg"><h1>Baharia University</h1><h2>MBA, Marketing</h2><h3>2006-2008</h3></li>
       </ul>
     ),
   },
@@ -83,43 +83,33 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 xl:gap-16 xl:px-16">
+      <div className="items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 xl:gap-16 xl:px-16 border-blue-500">
         <Image src="/images/travel.jpg" width={500} height={500} alt="New" />
-        <div className="mt-4 flex h-full flex-col text-left md:mt-0">
-          <h2 className="mb-4 text-4xl font-bold text-white">About Me</h2>
-          <p className="text-base lg:text-lg">
-          Opinion that can change lives. I have lived in Australia, Gulf, Pakistan, Thailand and now in Canada. 
-            I have studied and worked in all these countries and have experienced life. My vlogs are for 
-            the people who are seeking help, guidance, and information about all the above-mentioned countries. 
-            The idea of this channel is to be the source of information for the people around the world.
-          </p>
-          <div className="mt-8 flex flex-row justify-start">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
-          </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
-        </div>
+        <div className="mt-10 flex h-full flex-col text-center md:mt-auto bg-black/80 backdrop-blur-md rounded-3xl shadow-lg border border-gray-700 p-8 md:p-12 lg:p-16">
+  <h2 className="mb-4 text-4xl font-bold text-white">About Me</h2>
+  <p className="text-base lg:text-lg text-gray-300">
+    Opinion that can change lives. I have lived in Australia, Gulf, Pakistan, Thailand and now in Canada. 
+    I have studied and worked in all these countries and have experienced life. My vlogs are for 
+    the people who are seeking help, guidance, and information about all the above-mentioned countries. 
+    The idea of this channel is to be the source of information for the people around the world.
+  </p>
+  <div className="mt-8 flex flex-row justify-center">
+    <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
+      {" "}Skills{" "}
+    </TabButton>
+    <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>
+      {" "}Education{" "}
+    </TabButton>
+    <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>
+      {" "}Certifications{" "}
+    </TabButton>
+  </div>
+
+  <div className="mt-8">
+    {TAB_DATA.find((t) => t.id === tab).content}
+  </div>
+</div>
+
       </div>
     </section>
   );

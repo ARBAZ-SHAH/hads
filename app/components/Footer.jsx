@@ -3,7 +3,7 @@ import Image from 'next/image.js';
 
 const Footer = () => {
   return (
-    <footer className="footer z-9 rounded-xl border border-l-black border-r-transparent border-t-[#000000]  bg-gradient-to-br from-violet-500 via-black to-blue-300">
+    <footer id="contact" className="footer z-9 rounded-xl border border-l-black border-r-transparent border-t-[#000000]  bg-gradient-to-br from-violet-500 via-black to-blue-300">
       <div className="container flex justify-between p-12">
         {/* Logo Section */}
         <span>

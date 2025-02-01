@@ -32,8 +32,8 @@ const achievementsList = [
 
 const AchievementsSection = () => {
   return (
-    <div className="text-black px-4 py-8 xl:gap-16 sm:py-16 xl:px-16 bg-gradient-radial from-transparent via-neutral-100 to-transparent box-border">
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between text-black">
+    <div className="text-black px-4 py-8 xl:gap-16 sm:py-16 xl:px-16 bg-gradient-radial from-white via-slate-400 to-neutral-800 bg-black/80 backdrop-blur-md rounded-b-full shadow-lg border">
+      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between text-black rounded-b-full">
         {achievementsList.map((achievement, index) => {
           return (
             <div

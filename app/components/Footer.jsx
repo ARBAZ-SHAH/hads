@@ -17,7 +17,7 @@ const Footer = () => {
         </span>
 
         {/* Social Media Links */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 flex-wrap">
           <a
             href="https://www.instagram.com/mharissaid/"
             target="_blank"

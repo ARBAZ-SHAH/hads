@@ -74,6 +74,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-white">All rights reserved.</p>
+        <br></br>
         <p className="text-white">Please contact me here.</p>
       </div>
     </footer>

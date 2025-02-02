@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         {/* Fallback in case metadata doesn't work */}
         <link
           rel="icon"
-          href="/HSfavicon.ico" // Correct favicon path
+          href="/HSfavicon.ico?v=2" // Correct favicon path
           type="image/x-icon"
         />
         <title>{metadata.title}</title>

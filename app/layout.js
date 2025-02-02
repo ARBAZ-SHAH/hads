@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Fallback in case metadata doesn't work */}
-        <link
+        <link className="rounded-full"
           rel="icon"
           href="/HSfavicon.ico?v=2" // Correct favicon path
           type="image/x-icon"

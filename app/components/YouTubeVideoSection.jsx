@@ -102,7 +102,7 @@ const YouTubeVideoSection = () => {
         My Videos
       </h2>
 
-      <div className="flex flex-wrap items-center justify-center gap-2 py-5 text-black bg-gradient-to-tl from-violet-500 via-black to-blue-300 bg-black/80 backdrop-blur-md rounded-t-full shadow-lg border">
+      <div className="flex flex-wrap items-center justify-center gap-2 py-5 text-black bg-gradient-to-tl from-white via-neutral-950 to-slate-400 bg-black/80 backdrop-blur-md rounded-t-full shadow-lg border">
       <VideoTag
           hover="bg-lime-400 "
           onClick={handleTagChange}

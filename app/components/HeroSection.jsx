@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-12">
       <div className="col-span-7 place-self-center text-center sm:text-left">
-        <div className="relative h-[290px] w-[290px] rounded-full bg-slate-800 p-4 lg:h-[540px] lg:w-[540px]">
+        <div className="relative h-[290px] w-[290px] rounded-full bg-gradient-to-r from-white via-black to-white p-6 lg:h-[450px] lg:w-[450px] justify-center">
           <Image src="/images/HS.jpg" alt="Logo" className="rounded-full object-cover" width={400} height={400} />
         </div>
         <h1 className="mb-4 text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl border-text">

@@ -82,18 +82,18 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
-      <div className="items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 xl:gap-16 xl:px-16 border-blue-500">
+    <section className="text-black" id="about">
+      <div className="items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 xl:gap-16 xl:px-16 text-black">
         <Image src="/images/travel.jpg" width={500} height={500} alt="New" />
-        <div className="mt-10 flex h-full flex-col text-center md:mt-auto bg-black/80 backdrop-blur-md rounded-3xl shadow-lg border border-gray-700 p-8 md:p-12 lg:p-16">
-  <h2 className="mb-4 text-4xl font-bold text-white">About Me</h2>
-  <p className="text-base lg:text-lg text-gray-300">
+        <div className="mt-10 flex h-full flex-col text-center md:mt-auto bg-black/80 backdrop-blur-md rounded-3xl shadow-lg border border-gray-700 p-8 md:p-12 lg:p-16 text-black bg-gradient-to-l from-gray-800 via-gray-300 to-white">
+  <h2 className="mb-4 text-4xl font-bold text-black">About Me</h2>
+  <p className="text-base lg:text-lg text-black">
     Opinion that can change lives. I have lived in Australia, Gulf, Pakistan, Thailand and now in Canada. 
     I have studied and worked in all these countries and have experienced life. My vlogs are for 
     the people who are seeking help, guidance, and information about all the above-mentioned countries. 
     The idea of this channel is to be the source of information for the people around the world.
   </p>
-  <div className="mt-8 flex flex-row justify-center">
+  <div className="mt-8 flex-column justify-around bg-gradient-radial from-black via-gray-600 to-neutral-300 rounded-full">
     <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
       {" "}Skills{" "}
     </TabButton>
